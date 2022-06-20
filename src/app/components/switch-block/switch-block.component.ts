@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-switch-block',
@@ -6,8 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./switch-block.component.css']
 })
 export class SwitchBlockComponent implements OnInit {
+  isRed = false;
 
-  constructor() { }
+  toggleRed() {
+    this.isRed = !this.isRed;
+  }
+
+  constructor() {
+  }
 
   ngOnInit(): void {
   }
